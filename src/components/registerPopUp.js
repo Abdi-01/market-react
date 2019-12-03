@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, FormGroup, Input, Toast, ToastBody, ToastHeader, Spinner } from 'reactstrap';
-import { connect } from 'react-redux'
-import { login } from '../redux/action'
+// import { connect } from 'react-redux'
+// import { login } from '../redux/action'
 import Axios from 'axios'
 
 class RegisPopUp extends React.Component {
