@@ -20,3 +20,18 @@
 .App-link {
   color: #09d3ac;
 }
+
+.sizeCarousle{
+  width: 50%;
+  height: 50%;
+  margin: auto;
+}
+.sizeCard{
+  width: 75%;
+  height: 75%;
+  margin: auto;
+}
+
+.borderCard{
+  border-radius:2px ;
+}
