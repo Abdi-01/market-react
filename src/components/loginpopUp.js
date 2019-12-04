@@ -37,6 +37,7 @@ class LoginPopUp extends React.Component {
                         }
                         else{
                             console.log(res.data)
+                            localStorage.setItem(`userlogin`,username)//menyimpan data username pada local storage agar ketika page direfresh user tetap login 
                             this.props.login(res.data[0])//masuk authAction.js
                         }
                     })

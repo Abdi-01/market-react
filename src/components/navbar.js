@@ -25,8 +25,8 @@ class Header extends React.Component {
 
     render() {
         return (
-            <div>
-                <Navbar color="light" light expand="md">
+            <div >
+                <Navbar className="sizePage" color="light" light expand="md">
                     <Link className="navbar-brand mb-0 h1" to='/'>
                     <img src="https://pbs.twimg.com/profile_images/3316493842/a58ce0bd8ef2884c36f3071f06e953a7_400x400.png" width="30" height="30" className="d-inline-block align-top" alt=""/>
                         Market Cube

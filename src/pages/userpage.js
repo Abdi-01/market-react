@@ -21,7 +21,8 @@ class UserPage extends Component {
         });
     }
     componentDidMount() {
-        Axios.get('http://localhost:2000/dbcart')
+        let userlogincart =localStorage.getItem('userlogin')
+        Axios.get(`http://localhost:2000/dbcart?user=${userlogincart}`)
             .then((res) => {
                 //apa yang dilakukan pada data yang benar
                 this.setState({ data: res.data })

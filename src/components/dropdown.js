@@ -5,10 +5,13 @@ import { logout } from '../redux/action' //mengakses function dari action
 import { Link } from 'react-router-dom'
 
 class UserDropdown extends Component {
-    
+    logoutUser = () => {
+        this.props.logout()
+        localStorage.removeItem('userlogin')
+    }
     render() {
         return (
-            <UncontrolledDropdown style={{marginRight:15}}>
+            <UncontrolledDropdown style={{ marginRight: 15 }}>
                 <DropdownToggle caret>
                     Hi, {this.props.username}
                 </DropdownToggle>
@@ -28,7 +31,9 @@ class UserDropdown extends Component {
                         </Link>
                     }
                     <DropdownItem divider />
-                    <DropdownItem onClick={this.props.logout}>Logout</DropdownItem>
+                    <Link to='/'>
+                        <DropdownItem onClick={this.logoutUser}>Logout</DropdownItem>
+                    </Link>
                 </DropdownMenu>
             </UncontrolledDropdown>
         )

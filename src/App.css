@@ -32,6 +32,10 @@
   margin: auto;
 }
 
+.sizePage{
+  width: 100%;
+}
+
 .borderCard{
   border-radius:2px ;
 }
